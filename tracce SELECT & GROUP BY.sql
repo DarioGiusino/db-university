@@ -14,6 +14,8 @@ WHERE `cfu` > 10;
 SELECT *
 FROM `students`
 WHERE `date_of_birth` < '1993-02-14';
+-- WHERE (YEAR(CURDATE()) - YEAR(`date_of_birth`)) >= 30;
+-- WHERE `date_of_birth` <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
 
 -- 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 SELECT *
